@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+//use keyword is start
+//must be call in component and function
+// cannot call conditionally
 
 const UseStateBasics = () => {
   const [text, setText] = useState("ramdom text");
