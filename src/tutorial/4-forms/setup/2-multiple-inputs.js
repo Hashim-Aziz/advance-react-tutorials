@@ -15,7 +15,7 @@ const ControlledInputs = () => {
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-    setPerson({ ...person, [name]: value }); //dyamically change object field value by using [name]:value, '...person' preserve the existing value of person state
+    setPerson({ ...person, [name]: value }); //dyamically change object field value by using [name]:value, '...person' preserve the existing value of person state.
   };
 
   const handleSubmit = (e) => {
