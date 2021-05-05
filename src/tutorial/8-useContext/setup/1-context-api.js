@@ -4,6 +4,7 @@ import { data } from "../../../data";
 // fix - context api, redux (for more complex cases)
 
 const PersonCOntext = React.createContext();
+// two component - provider , consumer
 
 const ContextAPI = () => {
   const [people, setPeople] = useState(data);
@@ -21,7 +22,7 @@ const ContextAPI = () => {
 };
 
 const List = () => {
-  const mainData = useContext(PersonCOntext);
+  const mainData = useContext(PersonCOntext); // return the context value pass params from context provider
 
   return (
     <>
